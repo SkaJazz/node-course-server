@@ -41,7 +41,15 @@ app.get('/', (req,res) => {
 
 app.get('/about', (req,res) => {
 	res.render('about.hbs', {
-		pageTitle: 'О нашем проекте'
+		pageTitle: 'О нашем проекте',
+		message: 'Муми-блоггинг: о Финляндии с любовью'
+	});
+});
+
+app.get('/portfolio', (req,res) => {
+	res.render('portfolio.hbs', {
+		pageTitle: 'Портфолио',
+		message: 'Страница портфолио (в разработке)'
 	});
 });
 
